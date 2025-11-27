@@ -119,7 +119,7 @@ body {
         .inf {
             display:flex;
             padding: 20px 0px;
-            height: 280px;
+            height: 300px;
             scroll-margin-top: 80px;
         }
         .inf>div p{
