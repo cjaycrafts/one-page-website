@@ -1,0 +1,550 @@
+html{
+    scroll-behavior: smooth;
+}
+ 
+body {
+            margin:0;
+            padding:0;
+            background: rgba(204, 202, 202, 0.438);
+            font-family: 'inter',sans-serif;
+            overflow-x: hidden;
+        }
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+        .top-image {
+            color:#fffdd0 ;
+            position: relative;
+            width: 100%;
+            height: 700px;
+            /* background-image: url('afro-culture.jpg'); */
+            background-size: cover;
+            background-position: center;
+            background-image: linear-gradient(180deg,rgba(0,0,0,0.5),rgba(0,0,0,0.8)),
+            url('../images/andras-vas-Bd7gNnWJBkU-unsplash.jpg');
+        } 
+        .nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+        }
+        .nav .logo {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .nav ul{
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+        .nav a{
+            color: #fffdd0;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        .nav a:hover{
+            color: red;
+        }
+        .menu-toggle{
+            display: none;
+            font-size: 28px;
+            color: #fffdd0;
+            cursor: pointer;
+        }
+        .hero-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+        }
+        #big {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .btn-primary{
+            background: #007bff;
+            color: white;
+            border: none;
+        }
+        .btn-primary:hover {
+            background: #0056b3;
+        }
+        .btn-outline {
+            background: transparent;
+            border: 2px solid #007bff;
+            color: #007bff;
+        }
+        .btn-outline:hover {
+            background: #007bff;
+            color: white;
+        }
+.scribble {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    color: black;
+    scroll-margin-top: 80px;
+}
+
+        .scribble h1{
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .box {
+            padding: 10px 20px;
+            text-align: center;
+            width: 700px;
+            
+        }
+        .read {
+            color: transparent;
+            border: 2px solid #0056b3;
+        } 
+        .inf {
+            display:flex;
+            padding: 20px 0px;
+            height: 270px;
+            scroll-margin-top: 80px;
+        }
+        .inf>div p{
+            text-align: center;
+        }
+        .inf h2 {
+            font-size: 22px;
+            margin: 10px 0;
+        }
+        .inf p {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        .inf i {
+             font-size: 40px;
+             margin-bottom: 15px;
+        }
+        .mission,.vision,.story {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        .story,.vision {
+            background-color: #2a5ca6;
+        }
+        .mission {
+            background-color: #333;
+        }
+      
+       
+        .services {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+        .services p {
+            text-align: center;
+            width: 700px;
+        }
+        .services h1 {
+            color: #2a5ca6;
+        }
+        .section-grid {
+            display:grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .grid {
+            background: #f5f5f5;
+            padding: 20px;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        .grid:hover{
+            transform: translate(-5px);
+        }
+        .section-grid i {
+            font-size: 30px;
+            margin-bottom: 10px;
+            color: blue;
+        }
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background: #2a5ca6;
+            color: white;
+            padding: 60px 20px;
+            margin-top: 20px;
+            text-align: center;
+        } 
+        .stats h2 {
+            font-size: 40px;
+            margin: 0;
+            font-weight: bold;
+        }
+        .stats p{
+            margin: 5px 0 0;
+            font-size: 15px;
+        }
+        .our {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .our p {
+            text-align: center;
+            width: 700px;
+        }
+        .our h1{
+            color: #0056b3;
+        }
+        .lio-grid ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 20px;
+        }
+        .lio-grid a{
+            text-decoration: none;
+        }
+        .img-grid {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            padding: 20px;
+            margin: 0;
+            gap: 6px;
+        }
+        .img-grid img{
+            height: 200px;
+            width: 100%;
+            border-radius: 15px;
+        }
+        .img-grid img:hover{
+            transform: translate(-2.5px);
+        }
+        .ox {
+            /* height: 35px; */
+            margin: 0;
+            padding-top:20px;
+            padding-bottom: 10px;
+            justify-content: center;
+            display: flex;
+            gap: 60px;
+        }
+        .connect{
+            padding: 20px;
+            border-radius: 15px;
+            font-weight: 100;
+            font-family: 'dancing script',cursive;
+            font-size: 35px;
+            padding-left: 15px;
+            background:rgba(1, 83, 159, 0.989);
+        }
+        .ox img{
+            height: 40px;
+            display: inline;
+            padding-top: 0;
+            padding-right: 10px;
+            padding-left: 10px;
+            gap: 20px;
+        }
+    .ox img{
+         width: 40px ;
+
+        transition: transform 0.25s ease;
+        animation: autoJiggle 0.6s ease-in-out infinite;
+        animation-delay: 3s;
+        }
+        .ox img:hover{
+            transform: scale(1.15);
+        }
+        .dot{
+            display: inline-block;
+            animation: wave 1.5s infinite ease-in-out;
+        }
+        .dot1{
+            animation-delay: 1s;
+        }
+         .dot2{
+            animation-delay: 0.5s;
+        }
+         .dot3{
+            animation-delay: 0.7s;
+        }
+        @keyframes wave{
+            0%{transform: translateY(0);}
+            50%{transform: translateY(-6px);}
+            100%{transform: translateY(0);}
+        }
+        .menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+}
+/* .section-grid{
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 12px;
+    padding-right: 12px;
+} */
+.leo-grid ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+.leo-grid ul a{
+    font-size: 14px;
+    padding: 6px 10px;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav ul {
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: rgba(0,0,0,0.9);
+        padding: 20px;
+        border-radius: 10px;
+        flex-direction: column;
+        gap: 15px;
+        display: none;
+    }
+
+    .nav ul.show {
+        display: flex;
+    }
+    .inf{
+        flex-direction: column;
+        height: auto;
+    }
+    .section-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .img-grid{
+        grid-template-columns: repeat(2,1fr );
+    }
+
+}
+
+
+        /* ============================
+   RESPONSIVE DESIGN
+===============================*/
+
+/* --- Mobile (≤ 480px) --- */
+@media (max-width: 480px) {
+
+
+
+    .nav {
+        padding: 15px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo{
+        flex-shrink: 0;
+    }
+
+    .nav ul {
+       position: absolute;
+       top: 60px;
+       right: 20px;
+       background: rgba(0, 0, 0, 0.95);
+       padding: 20px;
+       border-radius: 10px;
+       flex-direction: column;
+       gap: 15px;
+       display: none;
+       width: 200px;
+    }
+    .nav ul.show{
+        display: flex;
+    }
+    #big{
+        font-size: 28px;
+    }
+    .hero-content{
+        width: 90%;
+    }
+    .box, .services p, .our p {
+        width: 100%;
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    .inf{
+        flex-direction: column;
+        height: auto;
+    }
+    .section-grid{
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0;
+    }
+    .grid{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+    .img-grid{
+        grid-template-columns: repeat(1,1fr);
+        gap: 12px;
+        padding: 0 15px;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+    .img-grid img{
+        width: 100%;
+        height: 200px;
+        max-height: 250px;
+        min-height: 150px;
+        object-fit: contain;
+        border-radius: 12px;
+        display: block;
+    }
+    .stats{
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+    }
+    .stat{
+        width: 45%;
+        max-width: 180px;
+    }
+    .leo-grid ul{
+        gap: 6px;
+
+    }
+    .leo-grid ul li a{
+        font-size: 13px;
+        padding: 5px 8px;
+    }
+    .ox{
+        padding: 15px 0;
+        justify-content: center;
+    }
+    .connect{
+        width: 95%;
+        font-size: 24px;
+        padding: 12px;
+        border-radius: 12px;
+        line-height: 1.3;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    .ox img{
+        width: 30px;
+        margin: 8px 6px 0;
+        display: inline-block;
+    }
+    .ox{
+        flex-wrap: wrap;
+    }
+    .connect span.dot{
+        font-size: 26px;
+    }
+}
+
+
+/* --- Tablets (≤ 768px) --- */
+@media (max-width: 768px) {
+
+    .nav {
+        padding: 10px 20px;
+    }
+
+    .nav ul {
+        gap: 15px;
+    }
+
+    .top-image {
+        height: 550px;
+    }
+
+    #big {
+        font-size: 32px;
+    }
+
+    .inf {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .section-grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 20px;
+    }
+
+    .img-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stats h2 {
+        font-size: 30px;
+    }
+}
+
+
+/* --- Small laptops (≤ 1024px) --- */
+@media (max-width: 1024px) {
+
+    .box,
+    .services p,
+    .our p {
+        width: 80%;
+    }
+
+    .section-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .img-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Fix missing dot in your CSS (.btn-outline:hover) */
+.btn-outline:hover {
+    background: #007bff;
+    color: white;
+}
+
+html, body {
+    overflow-x: hidden;
+}
