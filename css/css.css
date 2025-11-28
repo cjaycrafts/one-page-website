@@ -367,32 +367,41 @@ body {
 
 
     .nav {
-        padding: 15px 20px;
+        padding: 4px 14px;
+        height: 38px;
         display: flex;
-        justify-content: space-between;
         align-items: center;
     }
-    .logo{
-        flex-shrink: 0;
+    nav.logo{
+        font-size: 12px;
+        letter-spacing: 0.5px;
+        margin-top: 3px;
+    }
+    .menu-toggle{
+        font-size: 15px;
+    }
+    .hero-content{
+        margin-top: 40px;
     }
 
     .nav ul {
-       position: absolute;
-       top: 60px;
-       right: 20px;
-       background: rgba(0, 0, 0, 0.95);
-       padding: 20px;
-       border-radius: 10px;
-       flex-direction: column;
-       gap: 15px;
-       display: none;
-       width: 200px;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: rgba(0,0,0,0.9);
+        padding: 20px;
+        border-radius: 10px;
+        flex-direction: column;
+        gap: 15px;
+        display: none;
+        z-index: 1000; /* Add this line */
     }
+
     .nav ul.show{
         display: flex;
     }
     #big{
-        font-size: 28px;
+        font-size: 24px;
     }
     .hero-content{
         width: 90%;
