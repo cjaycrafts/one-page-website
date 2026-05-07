@@ -117,39 +117,44 @@ body {
             border: 2px solid #0056b3;
         } 
         .inf {
-            display:flex;
-            padding: 20px 0px;
-            height: 500px;
-            scroll-margin-top: 80px;
-        }
-        .inf>div p{
-            text-align: center;
-        }
-        .inf h2 {
-            font-size: 22px;
-            margin: 10px 0;
-        }
-        .inf p {
-            font-size: 14px;
-            line-height: 1.6;
-        }
-        .inf i {
-             font-size: 40px;
-             margin-bottom: 15px;
-        }
-        .mission,.vision,.story {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            color: white;
-        }
-        .story,.vision {
-            background-color: #2a5ca6;
-        }
-        .mission {
-            background-color: #333;
-        }
+    display: flex;
+    padding: 20px 0px;
+    height: 500px;
+    scroll-margin-top: 80px;
+}
+.inf > div p {
+    text-align: center;
+}
+.inf h2 {
+    font-size: 22px;
+    margin: 10px 0;
+}
+.inf p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+.inf i {
+    font-size: 40px;
+    margin-bottom: 15px;
+    display: block;        
+    text-align: center;    
+}
+.mission, .vision, .story {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex: 1;               
+    padding: 20px;         
+    overflow: hidden;      
+}
+.story, .vision {
+    background-color: #2a5ca6;
+}
+.mission {
+    background-color: #333;
+}
       
        
         .services {
