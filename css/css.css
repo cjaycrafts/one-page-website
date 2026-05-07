@@ -414,7 +414,7 @@ body {
     }
     .inf{
         flex-direction: column;
-        height: 600px;
+        height: 900px;
     }
     .section-grid{
         grid-template-columns: 1fr;
