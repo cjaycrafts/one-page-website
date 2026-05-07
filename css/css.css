@@ -416,6 +416,10 @@ body {
         flex-direction: column;
         height: 900px;
     }
+    .fas{
+        /* padding: 20%; */
+        padding-top: 20px;
+    }
     .section-grid{
         grid-template-columns: 1fr;
         gap: 15px;
